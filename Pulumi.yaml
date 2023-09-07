@@ -1,0 +1,3 @@
+name: pulumi-stack-example
+runtime: java
+description: A minimal Clojure Pulumi program demonstrating Stack Readmes

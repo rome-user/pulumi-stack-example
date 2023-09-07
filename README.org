@@ -1,0 +1,23 @@
+#+TITLE: stack-readme-java translation
+
+This example demonstrates how to use Pulumi Java SDK directly in Clojure. To run
+this example, you will need:
+
+- Java 11 or later
+- Leiningen
+
+* Running example
+
+** Caveat
+
+Pulumi does not support Leiningen natively. With that said, we have generated a
+pom.xml file using =lein pom= and used the exec-plugin to invoke leiningen with
+the following steps: clean, compile, uberjar. Lastly, there is a java execution
+goal that runs the class =stackreadme.app=.
+
+Note: it is theoretically to use =:pom-plugins= to configure plugins rather than
+write the XML by hand. In the interest of time, I wrote by hand.
+
+** Actually running example
+
+Run =lein deps= to fetch dependencies then =pulumi up=.
